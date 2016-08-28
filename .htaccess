@@ -1,0 +1,7 @@
+DirectoryIndex controller.php
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^favicon static/favicon.ico
+    RewriteRule !^static controller.php
+</IfModule>
+

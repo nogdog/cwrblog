@@ -1,0 +1,19 @@
+#head {
+    background: #113355 url(/static/img/banner.jpg) no-repeat left center;
+    background-size: 100%;
+    padding-top: 95px;
+}
+#head h1 {
+    color: #ddeeff;
+    padding-bottom: 30px;
+    text-shadow: 1px 1px 5px #000000;
+}
+#nav {
+    background: #112244;
+}
+#nav a { color: #ddeeff;}
+#nav a:hover { color: #113355;}
+#footer, #footer * {
+    background-color: #112244;
+    color: #ddeeff;
+}
