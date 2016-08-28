@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="792d4f15-b1cc-4679-87cd-959aad452fd5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-    </list>
+    <list default="true" id="792d4f15-b1cc-4679-87cd-959aad452fd5" name="Default" comment="" />
     <ignored path="cwrblog.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -33,22 +31,6 @@
                 <element signature="e#6#39#0#PHP" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new-post.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/posts/new-post.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="108">
-                <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
           </provider>
         </entry>
       </file>
@@ -336,12 +318,12 @@
       <option name="presentableId" value="Default" />
       <updated>1472354512071</updated>
       <workItem from="1472354513132" duration="3219000" />
-      <workItem from="1472358797136" duration="1328000" />
+      <workItem from="1472358797136" duration="1438000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4547000" />
+    <option name="totallyTimeSpent" value="4657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
