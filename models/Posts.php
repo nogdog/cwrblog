@@ -20,13 +20,13 @@ class Posts
 
     public function getPrevious($postName)
     {
-        $ix = array_search($this->stripSuffix($postName), $this->posts);
+        $ix = array_search('posts/'.$this->stripSuffix($postName), $this->posts);
         return ($ix > 0) ? $this->parts(basename($this->posts[$ix - 1])) : false;
     }
 
     public function getNext($postName)
     {
-        $ix = array_search($this->stripSuffix($postName), $this->posts);
+        $ix = array_search('posts/'.$this->stripSuffix($postName), $this->posts);
         return ($ix !== false and $ix < (count($this->posts) - 1))
             ? $this->parts(basename($this->posts[$ix + 1]))
             : false;
@@ -46,7 +46,7 @@ class Posts
     {
         $parts = explode('_', $path);
         $result = array(
-            'path' => $path,
+            'path' => preg_replace('/\.md$/', '', $path),
             'date' => array_shift($parts),
             'title' => ucwords(implode(' ', $parts))
         );

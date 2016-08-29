@@ -1,8 +1,8 @@
-DirectoryIndex controller.php
+DirectoryIndex index.php
 <IfModule mod_rewrite.c>
     RewriteEngine on
     RewriteRule ^favicon static/favicon.ico
-    RewriteRule !^static controller.php
+    RewriteRule !^static index.php
 </IfModule>
 ErrorDocument 404 /static/404.html
 
