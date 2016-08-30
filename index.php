@@ -8,8 +8,8 @@ if(!empty($url['query'])) {
 if($url['path'] == '/') {
     $url['path'] = '/home';
 }
-
-switch($url['path']) {
+$url['path'] = preg_replace('#(/[^/]*)/.*#', '$1', $url['path']);
+switch(rtrim($url['path'], '/')) {
     case '/home':
         require_once __DIR__.'/controllers/Home.php';
         $controller = new Home();
@@ -26,7 +26,12 @@ switch($url['path']) {
         require __DIR__.'/views/post.php';
         break;
     case '/contents':
-        die("contents not yet implemented");
+        require_once __DIR__.'/controllers/Contents.php';
+        $controller = new Contents();
+        $controller->index();
+        $data = $controller->data();
+        $posts = $controller->index();
+        require __DIR__.'/views/contents.php';
         break;
     case '/email':
         die("email not yet implemented");

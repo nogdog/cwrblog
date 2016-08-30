@@ -43,6 +43,13 @@
         <p><a href="https://twitter.com/CWReaceJr" class="twitter-follow-button" data-show-count="false">Follow @CWReaceJr</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
 </div>
 </div>
+<p id="bottom">Copyright &copy; 2016
+<?php
+    if(date('Y') > 2016) {
+        echo "-".date('Y');
+    }
+?>
+    by Charles Reace, Jr. &mdash; Built with cwrBlog (link to come).</p>
 </div>
 <script type="application/javascript" src="/static/js/jquery-3.1.0.min.js"></script>
 <script type="application/javascript" src="/static/js/bootstrap.min.js"></script>

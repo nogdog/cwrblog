@@ -19,7 +19,6 @@
                 <li role="presentation"><a href="/">Home</a></li>
                 <li role="presentation"><a href="/latest">Latest</a></li>
                 <li role="presentation"><a href="/contents/">Contents</a></li>
-                <li role="presentation"><a href="/email/">Email Me</a></li>
             </ul>
         </div>
     </div>

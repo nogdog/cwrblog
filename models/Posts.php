@@ -8,7 +8,7 @@
  */
 class Posts
 {
-    private $posts = array();
+    public $posts = array();
 
     public function __construct()
     {
@@ -34,7 +34,7 @@ class Posts
 
     public function getLatest()
     {
-        return $this->parts(basename($this->posts[count($this->posts) - 1]));
+        return count($this->posts) ? $this->parts(basename($this->posts[count($this->posts) - 1])) : false;
     }
 
     private function stripSuffix($path)

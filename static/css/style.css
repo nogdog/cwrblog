@@ -17,3 +17,8 @@
     background-color: #112244;
     color: #ddeeff;
 }
+#bottom {
+    text-align: center;
+    border-top: solid 1px #666;
+    padding-top: 0.6em;
+}
