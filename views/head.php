@@ -7,8 +7,26 @@
     <meta name="verify-v1" content="qN48L1fp1ZHcbL3gdogaoRlW1tEtdPj9t4nvzQWTIrk=">
     <link rel="icon" type="image/png" href="/static/img/favicon.ico"/>
     <title><?php echo !empty($title) ? htmlspecialchars($title) : 'Charles Reace'; ?></title>
+    <script type="application/javascript" src="/static/js/jquery-3.1.0.min.js"></script>
 </head>
 <body>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '1034193336678712',
+            xfbml      : true,
+            version    : 'v2.7'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <div class="container">
     <div class="row" id="head">
         <div class="col-md-12">

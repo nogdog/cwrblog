@@ -51,7 +51,6 @@
 ?>
     by Charles Reace, Jr. &mdash; Built with cwrBlog (link to come).</p>
 </div>
-<script type="application/javascript" src="/static/js/jquery-3.1.0.min.js"></script>
 <script type="application/javascript" src="/static/js/bootstrap.min.js"></script>
 </body>
 </html>

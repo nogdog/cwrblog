@@ -22,3 +22,9 @@
     border-top: solid 1px #666;
     padding-top: 0.6em;
 }
+.fb-like {
+    margin: 0.5em 0 1em;
+    padding: 0.5em 0;
+    border-top: solid 1px #666;
+    border-bottom: solid 1px #666;
+}
