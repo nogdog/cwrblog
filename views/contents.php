@@ -1,7 +1,7 @@
 <?php
 require __DIR__.'/head.php';
 ?>
-<h1>Articles, Posts, Whatever You Want to Call Them</h1>
+<h2>Articles, Posts, Whatever You Want to Call Them</h2>
 <div class="list-group">
     <?php
     foreach($posts as $post) {

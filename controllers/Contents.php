@@ -36,6 +36,7 @@ class Contents extends Controller
                 'title' => ucwords(implode(' ', array_slice($parts, 1)))
             );
         }
+        krsort($result);
         return $result;
     }
 
