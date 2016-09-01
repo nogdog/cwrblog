@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <meta name="verify-v1" content="qN48L1fp1ZHcbL3gdogaoRlW1tEtdPj9t4nvzQWTIrk=">
     <link rel="icon" type="image/png" href="/static/img/favicon.ico"/>
-    <title><?php echo !empty($title) ? htmlspecialchars($title) : 'Charles Reace'; ?></title>
+    <title>Charles Reace<?php echo !empty($data['title']) ? ': '.htmlspecialchars($data['title']) : ''; ?></title>
     <script type="application/javascript" src="/static/js/jquery-3.1.0.min.js"></script>
 </head>
 <body>
@@ -41,4 +41,4 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8" id="post">

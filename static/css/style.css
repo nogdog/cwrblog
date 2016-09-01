@@ -28,3 +28,7 @@
     border-top: solid 1px #666;
     border-bottom: solid 1px #666;
 }
+#post img {
+    float: left;
+    margin: 0.5em 0.5em 0.5em 0;
+}

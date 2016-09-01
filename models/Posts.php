@@ -42,7 +42,7 @@ class Posts
         return preg_replace('/\.md$/i', '', $path);
     }
 
-    private function parts($path)
+    public function parts($path)
     {
         $parts = explode('_', $path);
         $result = array(
