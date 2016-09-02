@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Created by PhpStorm.
  * User: creace
@@ -9,10 +8,20 @@
 
 require_once __DIR__.'/Controller.php';
 
+/**
+ * Class Contents
+ * Contents page
+ */
 class Contents extends Controller
 {
+    /**
+     * @var Posts
+     */
     private $posts;
 
+    /**
+     * Contents constructor.
+     */
     public function __construct()
     {
         parent::__construct();
@@ -20,11 +29,19 @@ class Contents extends Controller
         $this->posts = new Posts();
     }
 
+    /**
+     * getter for posts property
+     * @return Posts
+     */
     public function posts()
     {
         return $this->posts;
     }
 
+    /**
+     * default entry point
+     * @return array
+     */
     public function index()
     {
         $result = array();
@@ -38,12 +55,5 @@ class Contents extends Controller
         }
         krsort($result);
         return $result;
-    }
-
-    private function lastTime()
-    {
-        $cmd = 'ls -At '.__DIR__.'/../posts | head -n 1';
-        $latest = trim(shell_exec($cmd));
-        return filemtime(__DIR__.'/../posts/'.$latest);
     }
 }

@@ -9,10 +9,19 @@
 
 require_once __DIR__.'/Controller.php';
 
+/**
+ * Class Home
+ */
 class Home extends Controller
 {
+    /**
+     * @var Posts
+     */
     private $posts;
-    
+
+    /**
+     * Home constructor.
+     */
     public function __construct()
     {
         parent::__construct();
@@ -20,6 +29,9 @@ class Home extends Controller
         $this->posts = new Posts();
     }
 
+    /**
+     * entry point
+     */
     public function index()
     {
         $this->data['latest'] = $this->posts->getLatest();

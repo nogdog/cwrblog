@@ -9,10 +9,20 @@
 
 require_once __DIR__.'/Controller.php';
 
+/**
+ * Class Post
+ * Display a post
+ */
 class Post extends Controller
 {
+    /**
+     * @var Posts
+     */
     protected $posts;
-    
+
+    /**
+     * Post constructor.
+     */
     public function __construct()
     {
         parent::__construct();
@@ -20,6 +30,9 @@ class Post extends Controller
         $this->posts = new Posts();
     }
 
+    /**
+     * main entry point when a specific post is requested
+     */
     public function index()
     {
         $path = strtolower(str_replace('.', '', $this->url['path']));
@@ -29,7 +42,10 @@ class Post extends Controller
         $this->data['previous'] = $this->posts->getPrevious($this->data['current']['path']);
         $this->data['next']     = $this->posts->getNext($this->data['current']['path']);
     }
-    
+
+    /**
+     * display the latest post
+     */
     public function latest()
     {
         $this->data['current']  = $this->posts->getLatest();

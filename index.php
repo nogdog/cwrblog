@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * All non-static requests come here.
+ */
 $url = parse_url($_SERVER['REQUEST_URI']);
 if(!empty($url['query'])) {
     parse_str($url['query'], $query);
@@ -9,6 +11,10 @@ if($url['path'] == '/') {
     $url['path'] = '/home';
 }
 $url['path'] = preg_replace('#(/[^/]*)/.*#', '$1', $url['path']);
+
+/**
+ * based on URL, run the applicable controller then view
+ */
 switch(rtrim($url['path'], '/')) {
     case '/home':
         require_once __DIR__.'/controllers/Home.php';

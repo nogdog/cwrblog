@@ -11,7 +11,7 @@ if(!empty($data['current'])) {
         '<img',
         '<img class="hidden-xs"',
         str_replace(
-            ' -- ',
+            ' -- ', // convert to em-dash
             '&thinsp;&mdash;&thinsp;',
             $parser->parse(file_get_contents(__DIR__.'/../posts/'.$data['current']['path'].'.md'))
         )
