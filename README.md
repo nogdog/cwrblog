@@ -22,7 +22,7 @@ makes any image tags within the post float left.
 ## Images
 
 The /static/img directory should contain an image file named `banner.jpg`
-to be used as the background image in the page's banner. I used a
+to be used as the background image in the page's banner. (I used a
 2,048px × 532px jpeg which seemed to work pretty well). You can also 
 put a `favicon.ico` file there to be used as the blog's favicon.
 You can use this directory to upload images you want to use in your
