@@ -49,7 +49,7 @@
         echo "-".date('Y');
     }
 ?>
-    by Charles Reace, Jr. &mdash; Built with cwrBlog (link to come).</p>
+    by Charles Reace, Jr. &mdash; Built with <a href="https://github.com/nogdog/cwrblog">cwrBlog</a></p>
 </div>
 <script type="application/javascript" src="/static/js/bootstrap.min.js"></script>
 </body>
