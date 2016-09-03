@@ -1,4 +1,8 @@
 <?php
+$config = json_decode(file_get_contents(__DIR__.'/config.json'), true);
+if($config == false) {
+    throw new Exception("Unable to load conifg file");
+}
 /**
  * All non-static requests come here.
  */

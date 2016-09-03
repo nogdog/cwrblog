@@ -27,3 +27,14 @@ to be used as the background image in the page's banner. (I used a
 put a `favicon.ico` file there to be used as the blog's favicon.
 You can use this directory to upload images you want to use in your
 posts, if desired.
+
+## Views
+
+cwrBlog makes use of Bootstrap for styling and multiple screen size
+support. There are a few items in `/config.json` that are used for
+values in the head and foot views.
+
+* `banner_title` is the site "name" displayed in the banner at the top of every page
+* `title_part_one` is used for the title element within the head section
+* `copyright_name` is who you want to list as owning the copyright to the blog content
+* `copyright_year` is the earliest year you want listed in the copyright statement

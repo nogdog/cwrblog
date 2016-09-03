@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <meta name="verify-v1" content="qN48L1fp1ZHcbL3gdogaoRlW1tEtdPj9t4nvzQWTIrk=">
     <link rel="icon" type="image/png" href="/static/img/favicon.ico"/>
-    <title>Charles Reace<?php echo !empty($data['title']) ? ': '.htmlspecialchars($data['title']) : ''; ?></title>
+    <title><?php
+        echo htmlspecialchars($config['title_part_one']);
+        echo !empty($data['title']) ? ': '.htmlspecialchars($data['title']) : '';
+    ?></title>
     <script type="application/javascript" src="/static/js/jquery-3.1.0.min.js"></script>
 </head>
 <body>
@@ -30,7 +33,7 @@
 <div class="container">
     <div class="row" id="head">
         <div class="col-md-12">
-            <h1>Charles Reace</h1>
+            <h1><?php echo $config['banner_title']; ?></h1>
         </div>
         <div id="nav" class="col-md-12">
             <ul class="nav nav-pills">
