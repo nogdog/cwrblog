@@ -38,3 +38,8 @@ values in the head and foot views.
 * `title_part_one` is used for the title element within the head section
 * `copyright_name` is who you want to list as owning the copyright to the blog content
 * `copyright_year` is the earliest year you want listed in the copyright statement
+ 
+### Right Column content
+
+Edit the `/views/right_column.php` file for whatever you'd like to appear in that
+column (google search, links to other sites, whatever you like).
