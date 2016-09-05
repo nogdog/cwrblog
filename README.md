@@ -6,6 +6,12 @@ into HTML. As a result, there is no admin interface, as the only "admin"
 you need to do is use (S)FTP or whatever other method you prefer to
 upload your post files.
 
+## Installation
+
+Download or pull this repo. For now, it will only work from your
+web root directory. (I have an open issue to change that.) Edit the
+`/.config.json` file with desired values for your site.
+ 
 ## Blog Posts
 
 Posts are stored as markdown files in the /posts directory. You need
