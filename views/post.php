@@ -1,5 +1,6 @@
 <?php
-if(!file_exists(__DIR__.'/../posts/'.$data['current']['path'].'.md')) {
+$postFile = __DIR__.'/../posts/'.basename($data['current']['path']).'.md';
+if(!file_exists($postFile)) {
     require __DIR__.'/../static/404.php';
     exit;
 }
@@ -13,7 +14,7 @@ if(!empty($data['current'])) {
         str_replace(
             ' -- ', // convert to em-dash
             '&thinsp;&mdash;&thinsp;',
-            $parser->parse(file_get_contents(__DIR__.'/../posts/'.$data['current']['path'].'.md'))
+            $parser->parse(file_get_contents($postFile))
         )
     );
     echo <<<EOD

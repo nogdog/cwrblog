@@ -31,6 +31,7 @@ class Posts
      */
     public function getPrevious($postName)
     {
+        $postName = basename($postName);
         $ix = array_search('posts/'.$this->stripSuffix($postName), $this->posts);
         return ($ix > 0) ? $this->parts(basename($this->posts[$ix - 1])) : false;
     }
@@ -42,6 +43,7 @@ class Posts
      */
     public function getNext($postName)
     {
+        $postName = basename($postName);
         $ix = array_search('posts/'.$this->stripSuffix($postName), $this->posts);
         return ($ix !== false and $ix < (count($this->posts) - 1))
             ? $this->parts(basename($this->posts[$ix + 1]))

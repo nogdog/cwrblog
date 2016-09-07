@@ -8,12 +8,12 @@
     else {
         if(!empty($data['previous'])) {
             echo "<a class=\"list-group-item list-group-item-action\" 
-                href='/{$data['previous']['path']}'>Previous: <b>{$data['previous']['title']}</b>
+                href='{$data['previous']['path']}'>Previous: <b>{$data['previous']['title']}</b>
                 ({$data['previous']['date']})</a>";
         }
         if(!empty($data['next'])) {
             echo "<a class=\"list-group-item list-group-item-action\" 
-            href='/{$data['next']['path']}'>Next: <b>{$data['next']['title']}</b> ({$data['next']['date']})</a>";
+            href='{$data['next']['path']}'>Next: <b>{$data['next']['title']}</b> ({$data['next']['date']})</a>";
         }
     }
     ?>

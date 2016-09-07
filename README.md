@@ -25,6 +25,9 @@ convert " -- " (space, double-hypen, space) to HTML entities for
 thin-space, em-dash, thin-space. The CSS (in `/static/css/style.css`)
 makes any image tags within the post float left.
 
+If you use the `/static/img/` directory for images in your posts, use
+a relative URL (no leading slash), such as `static/img/your_image.jpg`.
+
 ## Images
 
 The /static/img directory should contain an image file named `banner.jpg`
