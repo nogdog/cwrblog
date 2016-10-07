@@ -8,8 +8,8 @@ upload your post files.
 
 ## Installation
 
-Download or pull this repo. For now, it will only work from your
-web root directory. (I have an open issue to change that.) Edit the
+Download or pull this repo. ~~For now, it will only work from your
+web root directory. (I have an open issue to change that.)~~ _(fixed!)_ Edit the
 `/.config.json` file with desired values for your site.
  
 ## Blog Posts
