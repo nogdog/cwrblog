@@ -25,7 +25,7 @@
 </div>
 <p id="bottom">Copyright &copy; <?php echo $config['copyright_start_year']; ?>
 <?php
-    if(date('Y') > 2016) {
+    if(date('Y') > $config['copyright_start_year']) {
         echo "-".date('Y');
     }
 ?>
