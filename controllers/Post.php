@@ -37,10 +37,10 @@ class Post extends Controller
     {
         $path = strtolower(str_replace('.', '', $this->url['path']));
         $stuff = $this->posts->parts($path);
-        $this->data['title'] = $stuff['title'];
+        $this->data['title']           = $stuff['title'];
         $this->data['current']['path'] = ltrim($path, '/');
-        $this->data['previous'] = $this->posts->getPrevious($this->data['current']['path']);
-        $this->data['next']     = $this->posts->getNext($this->data['current']['path']);
+        $this->data['previous']        = $this->posts->getPrevious($this->data['current']['path']);
+        $this->data['next']            = $this->posts->getNext($this->data['current']['path']);
     }
 
     /**
@@ -49,8 +49,8 @@ class Post extends Controller
     public function latest()
     {
         $this->data['current']  = $this->posts->getLatest();
-        $stuff = $this->posts->parts($this->data['current']['path']);
-        $this->data['title'] = $stuff['title'];
+        $stuff                  = $this->posts->parts($this->data['current']['path']);
+        $this->data['title']    = $stuff['title'];
         $this->data['previous'] = $this->posts->getPrevious($this->data['current']['path']);
         $this->data['next']     = $this->posts->getNext($this->data['current']['path']);
     }
