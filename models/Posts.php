@@ -1,10 +1,10 @@
 <?php
+/**
+ * PHPUnit test
+ */
 
 /**
- * Created by PhpStorm.
- * User: creace
- * Date: 8/28/16
- * Time: 4:16 PM
+ * Test for Posts model
  */
 class Posts
 {
@@ -18,7 +18,7 @@ class Posts
      */
     public function __construct()
     {
-        $posts = glob('posts/2*.md');
+        $posts = glob('posts/[12]*.md');
         foreach($posts as $path) {
             $this->posts[] = $this->stripSuffix($path);
         }
