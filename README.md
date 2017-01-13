@@ -52,3 +52,13 @@ values in the head and foot views.
 
 Edit the `/views/right_column.php` file for whatever you'd like to appear in that
 column (google search, links to other sites, whatever you like).
+
+## Tests
+
+I added a few PHPUnit tests, more as a way to sanity-check things when I make any
+changes. To run them, you'll need to [install PHPUnit.phar](https://phpunit.de/getting-started.html),
+then run it from the base project directory:
+
+```
+> phpunit tests
+```
