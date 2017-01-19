@@ -62,3 +62,7 @@ then run it from the base project directory:
 ```
 > phpunit tests
 ```
+
+# To-Do
+
+Trying to decide if I want to add reader comment capability, and if so, how.
