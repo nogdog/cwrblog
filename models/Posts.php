@@ -1,10 +1,10 @@
 <?php
 /**
- * PHPUnit test
+ * CWRBlog
  */
 
 /**
- * Test for Posts model
+ * Collection of post files
  */
 class Posts
 {

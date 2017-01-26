@@ -1,16 +1,13 @@
 <?php
 
 /**
- * Created by PhpStorm.
- * User: creace
- * Date: 8/28/16
- * Time: 9:57 PM
+ * CWRBlog
  */
 
 require_once __DIR__.'/Controller.php';
 
 /**
- * Class Home
+ * Home Page
  */
 class Home extends Controller
 {

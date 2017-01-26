@@ -1,16 +1,12 @@
 <?php
 
 /**
- * Created by PhpStorm.
- * User: creace
- * Date: 8/28/16
- * Time: 10:17 PM
+ * CWRBlog
  */
 
 require_once __DIR__.'/Controller.php';
 
 /**
- * Class Post
  * Display a post
  */
 class Post extends Controller

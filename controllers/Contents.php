@@ -1,15 +1,11 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: creace
- * Date: 8/29/16
- * Time: 6:49 PM
+ * CWRBlog
  */
 
 require_once __DIR__.'/Controller.php';
 
 /**
- * Class Contents
  * Contents page
  */
 class Contents extends Controller

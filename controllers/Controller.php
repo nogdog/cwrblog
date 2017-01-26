@@ -1,13 +1,12 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: creace
- * Date: 8/28/16
- * Time: 9:53 PM
+ * CWRBlog
  */
 
 /**
- * Class Controller
+ * Controller
+ *
+ * Parent for concrete controllers
  */
 abstract class Controller
 {
