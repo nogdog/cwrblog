@@ -19,18 +19,16 @@
     ?>
 </div>
 </div>
-<div class="col-md-3 col-md-offset-1" id="right_col">
+<div id="extra">
 <?php require __DIR__.'/right_column.php'; ?>
 </div>
-</div>
-<p id="bottom">Copyright &copy; <?php echo $config['copyright_start_year']; ?>
+<p id="footer">Copyright &copy; <?php echo $config['copyright_start_year']; ?>
 <?php
     if(date('Y') > $config['copyright_start_year']) {
         echo "-".date('Y');
     }
 ?>
-    by <?php echo $config['copyright_name']; ?> &mdash; Built with <a href="https://github.com/nogdog/cwrblog">cwrBlog</a></p>
-</div>
-<script type="application/javascript" src="/static/js/bootstrap.min.js"></script>
+    by <?php echo $config['copyright_name']; ?> &mdash; Built with
+    <a href="https://github.com/nogdog/cwrblog">cwrBlog</a></p>
 </body>
 </html>
