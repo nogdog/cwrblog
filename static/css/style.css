@@ -1,52 +1,85 @@
-#head {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 0 1em;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 1.5em;
+    grid-auto-rows: minmax(auto, auto);
+}
+body * {
+    line-height: 1.3em;
+}
+#banner {
     background: #113355 url('../img/banner.jpg') no-repeat left center;
     background-size: 100%;
-    padding-top: 95px;
-}
-#head h1 {
+    padding: 120px 1em 30px;
+    margin: 0;
     color: #ddeeff;
-    padding-bottom: 30px;
     text-shadow: 1px 1px 5px #000000;
+    grid-column: 1 / 4;
+    grid-row: 1;
 }
 #nav {
-    background: #112244;
+    overflow: auto;
+    margin: 0.5em 0;
+    padding: 0;
+    grid-column: 1 / 4;
+    grid-row: 2;
 }
-#nav a { color: #ddeeff;}
-#nav a:hover { color: #113355;}
-#footer, #footer * {
-    background-color: #112244;
-    color: #ddeeff;
-}
-#bottom {
-    text-align: center;
-    border-top: solid 1px #666;
-    padding-top: 0.6em;
-}
-.fb-like {
-    margin: 0.5em 0 1em;
-    padding: 0.5em 0;
-    border-top: solid 1px #666;
-    border-bottom: solid 1px #666;
-}
-#post img {
+#nav li {
     float: left;
-    margin: 0.5em 0.5em 0.5em 0;
+    list-style-type: none;
+    margin: 0 0.5em 0 0;
+    padding: 0.5em;
+    background-color: #443366;
+    color: white;
+    border-radius: 7px;
 }
-/* fix for google search button */
-.gsc-control-cse .gsc-table-result {
-    font-family : inherit;
+#nav li a {
+    color: inherit;
+    text-decoration: none;
 }
-
-.gsc-control-cse .gsc-input-box {
-    height : inherit;
+#nav li a:hover {
+    text-decoration: underline;
 }
-
-input.gsc-input,
-.gsc-input-box,
-.gsc-input-box-hover,
-.gsc-input-box-focus,
-.gsc-search-button, input.gsc-search-button-v2 {
-    box-sizing  : content-box;
-    line-height : normal;
-    margin-top  : 0px;
+#main {
+    grid-column: 1 / 4;
+    grid-row: 3;
+}
+#extra {
+    grid-column: 1 / 4;
+    grid-row: 4;
+}
+#footer {
+    margin: 1em 0 0;
+    padding: 0.5em 1em;
+    text-align: center;
+    border-top: solid 1px black;
+    font-size: 90%;
+    grid-column: 1 / 4;
+    grid-row: 5;
+}
+@media (min-width: 600px) {
+    #main {
+        grid-column: 1 / 3;
+    }
+    #extra {
+        grid-column: 3;
+        grid-row: 3;
+        padding-left: 1.5em;
+    }
+    #footer {
+        grid-row: 4;
+    }
+}
+@media (max-width: 460px) {
+    #banner {
+        background-image: none;
+        padding: 30px 1em;
+        border-radius: 7px;
+        font-size: x-large;
+    }
 }
