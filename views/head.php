@@ -12,9 +12,9 @@
 </head>
 <body>
 <h1 id="banner"><?php echo $config['banner_title']; ?></h1>
-<ul id="nav">
-    <li><a href="home">Home</a></li>
-    <li><a href="latest">Latest</a></li>
-    <li><a href="contents">Contents</a></li>
-</ul>
+<div id="nav">
+    <a class="button" href="home">Home</a>
+    <a class="button" href="latest">Latest</a>
+    <a class="button" href="contents">Contents</a>
+</div>
 <div id="main">

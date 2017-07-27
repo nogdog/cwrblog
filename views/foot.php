@@ -1,19 +1,16 @@
-<div id="pagination" class="list-group">
+<div id="pagination">
     <?php
     if(!empty($data['latest'])) {
-        echo "<a class='list-group-item list-group-item-action' 
-            href='{$data['latest']['path']}'>Latest Post: <b>{$data['latest']['title']}</b> 
+        echo "<a class='button' href='{$data['latest']['path']}'>Latest Post: <b>{$data['latest']['title']}</b> 
             ({$data['latest']['date']})</a>";
     }
     else {
         if(!empty($data['previous'])) {
-            echo "<a class=\"list-group-item list-group-item-action\" 
-                href='{$data['previous']['path']}'>Previous: <b>{$data['previous']['title']}</b>
+            echo "<a class='button' href='{$data['previous']['path']}'>Previous: <b>{$data['previous']['title']}</b>
                 ({$data['previous']['date']})</a>";
         }
         if(!empty($data['next'])) {
-            echo "<a class=\"list-group-item list-group-item-action\" 
-            href='{$data['next']['path']}'>Next: <b>{$data['next']['title']}</b> ({$data['next']['date']})</a>";
+            echo "<a class='button' href='{$data['next']['path']}'>Next: <b>{$data['next']['title']}</b> ({$data['next']['date']})</a>";
         }
     }
     ?>
