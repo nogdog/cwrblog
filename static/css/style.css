@@ -111,3 +111,10 @@ a.button:active {
 .fb-like {
     clear: both;
 }
+#four04 {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+#four04 * {
+    text-align: center;
+}
