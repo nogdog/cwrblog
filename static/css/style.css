@@ -36,10 +36,22 @@ body * {
 #main {
     grid-column: 1 / 4;
     grid-row: 3;
+    overflow: auto;
 }
 #extra {
     grid-column: 1 / 4;
     grid-row: 4;
+    font-size: 93%;
+}
+#extra li {
+     border: solid 1px #aaa;
+     margin: 1em 0;
+     padding: .5em;
+     border-radius: 4px;
+     list-style: none;
+ }
+#extra ul {
+    padding: 0;
 }
 #footer {
     margin: 1em 0 0;
@@ -95,4 +107,7 @@ a.button:active {
 #main img {
     float: left;
     margin: 0 0.5em 0.5em 0;
+}
+.fb-like {
+    clear: both;
 }
