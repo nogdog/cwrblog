@@ -6,7 +6,7 @@
 ?>
 <h3>Right Column Content</h3>
 <ul class="list-group">
-    <li class="list-group-item">Sample item.</li>
-    <li class="list-group-item">Sample item.</li>
-    <li class="list-group-item">Sample item.</li>
+    <li>Sample item.</li>
+    <li>Sample item, i.e: yet another item.</li>
+    <li>Sample item, i.e: this is getting really boring.</li>
 </ul>
