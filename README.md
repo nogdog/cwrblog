@@ -39,8 +39,8 @@ posts, if desired.
 
 ## Views
 
-cwrBlog makes use of Bootstrap for styling and multiple screen size
-support. There are a few items in `/config.json` that are used for
+cwrBlog makes use of [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+for multiple screen size support. There are a few items in `/config.json` that are used for
 values in the head and foot views.
 
 * `banner_title` is the site "name" displayed in the banner at the top of every page
