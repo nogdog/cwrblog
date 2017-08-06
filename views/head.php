@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="/static/css/style.css">
     <meta name="verify-v1" content="qN48L1fp1ZHcbL3gdogaoRlW1tEtdPj9t4nvzQWTIrk=">
     <link rel="icon" type="image/png" href="static/img/favicon.ico"/>
