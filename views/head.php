@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/lightbox.min.css">
+    <script type="text/javascript" src="/static/js/lightbox-plus-jquery.min.js"></script>
     <meta name="verify-v1" content="qN48L1fp1ZHcbL3gdogaoRlW1tEtdPj9t4nvzQWTIrk=">
     <link rel="icon" type="image/png" href="static/img/favicon.ico"/>
     <title><?php
